@@ -1,0 +1,17 @@
+﻿dl {  
+ border:1px solid #999;  
+ width:750px;  
+}  
+dt {  
+ float:left;  
+ width:100px;  
+ padding:5px 0 5px 10px;  
+ clear:both;  
+ font-weight:bold;  
+}  
+dd {  
+ width:600px;  
+ margin-left:100px;  
+ padding:5px 5px 5px 10px;  
+ border-left:1px solid #999;  
+}
