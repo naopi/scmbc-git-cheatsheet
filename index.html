@@ -36,13 +36,16 @@
 </dd>
 
 <dt>diff</dt>
-<dd>コマンドの解説</dd>
+<dd>コミット間、コミットと作業領域、などの差分を表示する。< /br>
+・git diff でインデックスと作業領域の差分を表示する。< /br>
+・git diff HEAD でHEADと作業領域の差分を表示する。< /br>
+</dd>
 
 <dt>grep</dt>
-<dd>コマンドの解説</dd>
+<dd>パターンマッチした行を表示する。</dd>
 
 <dt>fetch</dt>
-<dd>コマンドの解説</dd>
+<dd>別のリポジトリからなにかを取得する。</dd>
 
 <dt>init</dt>
 <dd>リポジトリを作成する</dd>
@@ -101,6 +104,17 @@
 コミットの順番の入れ替え<br />
 コミット履歴の編集<br />
 fetch、rebaseをすることにより、路線図のようなコミットグラフにならずに、機能単位などのコミットグラフを見ることができる。
+<ul>
+例
+<li>git chekout -b branch_name
+<li>edit 
+<li>git add
+<li>git commmit
+<li>git checkout master
+<li>git fetch
+<li>git rebase origin/master
+<li>git merge --no-ff branch_name
+</ul>
 </dd>
 
 <dt>reset</dt>
