@@ -1,0 +1,44 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Git Cheatsheet</title>
+<link rel="stylesheet" href="default.css" type="text/css" />
+</head>
+<body>
+<HR>
+リモートに作ったブランチを消す<BR>
+ブランチの一覧を取得する<br>
+<pre>
+git branch -r
+  origin/HEAD -> origin/master
+  origin/br01
+  origin/master
+  origin/mvpullpush-fix  ←削除対象 
+</pre>
+
+ブランチを指定して削除する<br>
+<pre>
+git push origin :mvpullpush-fix
+  Username: xxxxxxxx
+  Password: ********
+
+  To https://github.com/naopi/scmbc-git-cheatsheet.git
+    - [deleted]         mvpullpush-fix
+</pre>
+<br>
+■Pullよりfetchを使うのが吉！<br>
+<pre>
+　git checkout -b xxxxx
+　edit        |
+　git add     |繰り返し
+　git commiy  |
+　git checkout master
+　git fetch
+　git rebase origin/master
+　git checkout xxxxx
+　git rebase master
+　git checkout master
+　git merge -no-ff xxxxx
+</pre>
+</body>
+</html>
